@@ -3,9 +3,9 @@ body {
 }
 
 h1 {
-  color: #878787;
+  color: black;
   font-size: 24px;
-  font-weight: 100;
+  font-weight: bold;
   line-height: 28px;
   margin-bottom: 0;
 }
@@ -30,9 +30,20 @@ li:first-letter {
   text-transform: capitalize;
 }
 
+.btn{
+  transition: 0.3s;
+}
+
+.btn:hover{
+  background: black;
+  border-color: black;
+  transform: scale(1.2);
+}
+
 .weather-app-wrapper {
   max-width: 600px;
   margin: 30px auto;
+  display: none;
 }
 
 .weather-app {
@@ -51,3 +62,33 @@ li:first-letter {
   width: 64px;
 }
 
+.weather-temperature img:hover{
+  transform: scale(1.5);
+}
+
+.weather-temperature strong {
+  color: rgb(33, 33, 33);
+  font-size: 64px;
+  line-height: 1;
+  font-weight: 400;
+}
+
+.weather-temperature .units {
+  position: relative;
+  font-size: 16px;
+  top: -34px;
+}
+
+.weather-temperature .active {
+  color: rgb(33, 33, 33);
+  cursor: default;
+}
+
+.weather-temperature .active:hover {
+  text-decoration: none;
+}
+
+.loader {
+  margin: 100px auto 0;
+  width: 50px;
+}
