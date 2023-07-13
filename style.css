@@ -111,3 +111,7 @@ li:first-letter {
 .weather-forecast-temperatures {
   font-size: 13px;
 }
+
+.forimage:hover {
+  transform: scale(1.5);
+}
