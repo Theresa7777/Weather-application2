@@ -49,6 +49,7 @@ function displayForecast(response) {
           }@2x.png"
           alt=""
           width="42"
+          class="forimage"
         />
         <div class="weather-forecast-temperatures">
           <span class="weather-forecast-temperature-max"> ${Math.round(
@@ -102,6 +103,8 @@ function displayTemperature(response) {
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
+
+  getForecast(response.data.coord);
 }
 
 // let city = "Lagos";
